@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarea 1</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="#">Instagram</a>
+
+    <button class="btn btn-primary ml-auto" data-toggle="modal" data-target="#createPostModal">Create new post</button>
+  </div>
+</nav>
+
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-md-4 mb-4">
+      <a href="image_details.html" class="post">
+        <img src="imagenes/imagen1.jpg" class="img-fluid img-post" alt="Imagen Playa">
+      </a>
+    </div>
+    <div class="col-md-4 mb-4">
+      <a href="image_details.html" class="post">
+        <img src="imagenes/imagen2.jpg" class="img-fluid img-post" alt="Imagen Playa">
+      </a>
+    </div>
+    <div class="col-md-4 mb-4">
+      <a href="image_details.html" class="post">
+        <img src="imagenes/imagen3.jpg" class="img-fluid img-post" alt="Imagen anime">
+      </a>
+    </div>
+    <div class="col-md-4 mb-4">
+      <a href="image_details.html" class="post">
+        <img src="imagenes/imagen4.jpg" class="img-fluid img-post" alt="Imagen anime">
+      </a>
+    </div>
+    <div class="col-md-4 mb-4">
+      <a href="image_details.html" class="post">
+        <img src="imagenes/imagen5.jpg" class="img-fluid img-post" alt="Imagen anime">
+      </a>
+    </div>
+    <div class="col-md-4 mb-4">
+      <a href="image_details.html" class="post">
+        <img src="imagenes/imagen6.jpg" class="img-fluid img-post" alt="Imagen anime">
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="createPostModal" tabindex="-1" role="dialog" aria-labelledby="createPostModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="createPostModalLabel">Crear post nuevo</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="postDescription">Descripción</label>
+            <textarea class="form-control" id="postDescription" rows="3"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="postImage">Subir imagen</label>
+            <input type="file" class="form-control-file" id="postImage">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Publicar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
